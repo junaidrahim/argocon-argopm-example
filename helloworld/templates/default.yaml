@@ -1,0 +1,19 @@
+# hello-world.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: WorkflowTemplate
+metadata:
+  name: hello-world
+spec:
+  entrypoint: main
+  templates:
+  - name: main
+    dag:
+      tasks:
+        - name: hello-world
+          templateRef:
+            name: whalesay
+            template: say-something
+          arguments:
+            parameters:
+              - name: say-what
+                value: "hello world"

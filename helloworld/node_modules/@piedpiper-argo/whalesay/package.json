@@ -1,0 +1,13 @@
+{
+  "name": "@piedpiper-argo/whalesay",
+  "version": "1.0.1",
+  "description": "whalesay package",
+  "main": "index.js",
+  "keywords": [
+    "kubecon"
+  ],
+  "author": "Bertram Gilfoyle <gilfoyle@piedpiper.com>",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

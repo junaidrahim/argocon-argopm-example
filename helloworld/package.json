@@ -1,0 +1,14 @@
+{
+  "name": "@piedpiper-argo/helloworld",
+  "version": "1.0.0",
+  "description": "hello world package",
+  "main": "index.js",
+  "keywords": [
+    "kubecon"
+  ],
+  "author": "Junaid Rahim <junaid@piedpiper.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@piedpiper-argo/whalesay": "^1.0.0"
+  }
+}

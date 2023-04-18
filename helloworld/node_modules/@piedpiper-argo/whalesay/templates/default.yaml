@@ -1,0 +1,16 @@
+# whalesay.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: WorkflowTemplate
+metadata:
+  name: whalesay
+spec:
+  entrypoint: say-something
+  templates:
+  - name: say-something
+    inputs:
+      parameters:
+        - name: say-what
+    container:
+      image: docker/whalesay
+      command: [cowsay]
+      args: ["{{inputs.parameters.say-what}}"] 
